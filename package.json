@@ -6,7 +6,8 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "commander": "*"
+    "commander": "*",
+    "underscore": "1.5.2"
   },
   "devDependencies": {
     "commander": "*"
