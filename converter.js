@@ -36,23 +36,19 @@ if (program.to_xls) {
     console.log(array);
 
     fs.readFile('translations.js', 'utf8', function(err, data){
-
-        console.log('data');
-
-	/*var dados = [];
-
-	var csv = dados.map(function(linha){
-		return linha.map(function(celula){
-			return '"'+(celula.replace(/\"/g, '\"').replace(/\r/g, '\\r'))+'"';
-		}).join(';');
-	}).join('\n');*/
-
+        console.log(data);
+	    var dados = data;
+	    var csv = dados.map(function(linha){
+		    return linha.map(function(celula){
+			    return '"'+(celula.replace(/\"/g, '\"').replace(/\r/g, '\\r'))+'"';
+		    }).join(';');
+	    }).join('\n');
     });
 
-	/*fs.writeFile('translate.csv', csv, function(err){
+	fs.writeFile('translate.csv', csv, function(err){
 		if (err) throw err;
 		console.log('It\'s saved!');
 	});
 
-	console.log(csv);*/
+	console.log(csv);
 };
