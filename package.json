@@ -1,7 +1,6 @@
 {
   "name": "xls-converter",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "node app.js"
   },
@@ -11,5 +10,21 @@
   },
   "devDependencies": {
     "commander": "*"
-  }
+  },
+  "description": "command line to convert xls, csv to js and vice-versa",
+  "main": "converter.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulohp/xls_converter.git"
+  },
+  "keywords": [
+    "csv",
+    "xls"
+  ],
+  "author": "Paulo Pires",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulohp/xls_converter/issues"
+  },
+  "homepage": "https://github.com/paulohp/xls_converter"
 }
